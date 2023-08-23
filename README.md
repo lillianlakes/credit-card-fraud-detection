@@ -1,2 +1,2 @@
 # credit-card-fraud-detection
-Credit Card Fraud Detection Analysis – Flatiron Capstone Project
+Card Fraud Detection for E-Commerce Transactions – Flatiron Capstone Project
