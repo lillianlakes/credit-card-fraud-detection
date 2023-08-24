@@ -109,7 +109,7 @@ I got straightforward quantifiable insights from the odds ratios of the models. 
 
 
 ## Recommendations
-Given these results, I would recommend that financial institutions adopt a fraud probability scoring model to evaluate e-commerce transactions. This model should heavily weigh quick purchases and device frequency, along with other predictors that are most relevant to each instition. The fraud risk of each transaction could be gauged from the scoring model, such that transactions with low probability scores proceed with no interruptions, transactions with medium probability scores would need to pass two-factor authentication before proceeding, and transactions with high probability scores would need to be approved via a call to the financial institution's fraud prevention line.
+Given these results, I would recommend that financial institutions adopt a fraud probability scoring model to evaluate e-commerce transactions. This model should heavily weigh quick purchases and device frequency, along with other predictors that are most relevant to each institution (for instance, purchase value). The fraud risk of each transaction could be gauged from the scoring model, such that transactions with low probability scores proceed with no interruptions, transactions with medium probability scores would need to pass two-factor authentication before proceeding, and transactions with high probability scores would need to be approved via a call to the financial institution's fraud prevention line.
 
 Given the findings from the exploratory data analysis, I also recommend that financial institutions staff their customer service and fraud prevention departments higher in the month of January, when fraud risk is higher following the holiday shopping period.
 
