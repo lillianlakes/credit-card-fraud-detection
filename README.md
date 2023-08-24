@@ -9,7 +9,7 @@
 
 
 ## For More Information
-To explore our findings further, please review the full analysis in the [Jupyter Notebook](notebook.ipynb) or view my [Project Deck](presentation.pdf). 
+To explore our findings further, please review the full analysis in the [Jupyter Notebook](notebook.ipynb) or view my [Presentation Slide Deck](presentation.pdf). 
 
 
 ## Business Problem
@@ -66,8 +66,6 @@ Using the signup and purchase times, I created variables for purchase month, wee
 
 Additionally, I used Device ID to create a 'device frequency' value indicating the number of times a device was used in the dataset.
 
-
-
 To figure out what predictors might be more likely to result in a fraud transaction classification, I created a few visuals. 
 
 The below chart shows the likelihood of fraud by purchase month. **I found that January, following the holiday shopping rush, has the highest likelihood of fraud**.
@@ -93,3 +91,33 @@ I delved deepr into the analysis of countries by looking at the likelihood of fr
 I dug even further into the country analysis by using a map to explore the number of transactions, amount of fraud, and breakdown of quick purchases by country. **The United States has the most transactions, overall and fraudulent, with a high proportion of quick purchases**.
 
 ![Map showing the Number of Transactions, Amount of Fraud, and Breakdown of Quick Purchases by Country](images/countries_transactions_quick_purchases.jpeg)
+
+Next, I explored several models to analyze the e-commerce transactions and identify high predictors of fraud. The performance and interpretability of these models is summarized in the table below.
+
+![Table Summarizing Model Performance and Interpretability](images/model_summary_table.jpeg)
+
+More details, such as the confusion matrix, Area Under the Curve - Receiver Operating Characteristic (AUC-ROC) Curve, and Area Under the Curve - Precision-Recall (AUC-PR) Curve can be found in the [Jupyter Notebook](notebook.ipynb) and appendix section of the [Presentation Slide Deck](presentation.pdf).  
+
+
+## Results
+
+The Logistic Regression models (base model [Model 3] and with lasso regularization [Model 4]) both performed well and are easier to interpret. Both models had good accuracy, AUC and AUC-PR scores. These scores for the logistic regression model were 92.0%, 81.8% and 71% respectively. For the logistic regression with lasso regularization, these scores were 91.6%, 82.2% and 70% respectively. 
+
+I got straightforward quantifiable insights from the odds ratios of the models. The logistic regression model suggests that purchases made within the first 137 seconds of signup are 110 times more likely to be fraudulent. It also shows that a device used one additional time is 8 times more likely to make a fraudulent purchase. The logistic regression model with lasso regularization suggests that purchases made within the first 137 seconds of signup are 39 times more likely to be fraudulent. It also shows that a device used one additional time is 29 times more likely to make a fraudulent purchase.
+
+
+## Recommendations
+Given these results, I would recommend that financial institutions adopt a fraud probability scoring model to evaluate e-commerce transactions. This model should heavily weigh quick purchases and device frequency, along with other predictors that are most relevant to each instition. The fraud risk of each transaction could be gauged from the scoring model, such that transactions with low probability scores proceed with no interruptions, transactions with medium probability scores would need to pass two-factor authentication before proceeding, and transactions with high probability scores would need to be approved via a call to the financial institution's fraud prevention line.
+
+Given the findings from the exploratory data analysis, I also recommend that financial institutions staff their customer service and fraud prevention departments higher in the month of January, when fraud risk is higher following the holiday shopping period.
+
+
+### Next Steps
+
+Future areas for analysis that could build on the findings from this project include:
+
+- Time-Series analysis to spot fraud trends over time: Given the trends from the Card Fraud Worldwide graph, and the figures from the Nilson Report, it is evident that card fraud is on the rise. It would be interesting to see if the trends over time within this project's dataset also show that card fraud is on the rise.
+
+- Finding publicly available real datasets with mostly transparent data 
+
+- Detecting other forms of identity theft, such as government benefits and documents, the second most common form
