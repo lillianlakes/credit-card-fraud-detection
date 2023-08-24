@@ -92,6 +92,8 @@ I dug even further into the country analysis by using a map to explore the numbe
 
 ![Map showing the Number of Transactions, Amount of Fraud, and Breakdown of Quick Purchases by Country](images/countries_transactions_quick_purchases.jpg)
 
+To explore these visuals further, please view [this project's Tableau dashboard](https://public.tableau.com/views/CardFraudDetectionforE-CommerceTransactions/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
+
 Next, I explored several models to analyze the e-commerce transactions and identify high predictors of fraud. The performance and interpretability of these models is summarized in the table below.
 
 ![Table Summarizing Model Performance and Interpretability](images/model_summary_table.jpg)
