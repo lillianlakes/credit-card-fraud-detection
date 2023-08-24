@@ -82,7 +82,7 @@ I also looked at the likelihood of fraud by number of purchases made from the sa
 
 I also analyzed countries, beginning with the top 12 countries with the most transactions. **IP addresses from the United States are most represented, followed by IP addresses that are not trackable**.
 
-![Bar Chart showing the Top 12 Countries with the Most Transactions](images/fraud_by_device_frequency.jpg)
+![Bar Chart showing the Top 12 Countries with the Most Transactions](images/countries_with_most_transactions.jpg)
 
 I delved deepr into the analysis of countries by looking at the likelihood of fraud by country for the top 12 countries with the most transactions. **Of the top 12, Canada has the most fraudulent transactions & the United States has high fraud levels**.
 
