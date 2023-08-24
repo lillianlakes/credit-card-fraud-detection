@@ -9,7 +9,7 @@
 
 
 ## For More Information
-To explore our findings further, please review the full analysis in the [Jupyter Notebook](notebook.ipynb) or view my [Presentation Slide Deck](presentation.pdf). 
+To explore our findings further, please review the full analysis in the [Jupyter Notebook](index.ipynb) or view my [Presentation Slide Deck](presentation.pdf). 
 
 
 ## Business Problem
@@ -70,33 +70,33 @@ To figure out what predictors might be more likely to result in a fraud transact
 
 The below chart shows the likelihood of fraud by purchase month. **I found that January, following the holiday shopping rush, has the highest likelihood of fraud**.
 
-![Bar Chart showing the Likelihood of Fraud by Purchase Month](images/fraud_by_purchase_month.jpeg)
+![Bar Chart showing the Likelihood of Fraud by Purchase Month](images/fraud_by_purchase_month.jpg)
 
 Next, I looked at the likelihood of fraud by whether or not a purchase was made within 137 seconds of signup. **In the data, purchases made less than 137 seconds after signup are all fraudulent**.
 
-![Bar Chart showing the Likelihood of Fraud by whether or not a Purchase was made within 137 Seconds of Signup](images/fraud_by_quick_purchase.jpeg)
+![Bar Chart showing the Likelihood of Fraud by whether or not a Purchase was made within 137 Seconds of Signup](images/fraud_by_quick_purchase.jpg)
 
 I also looked at the likelihood of fraud by number of purchases made from the same device. **I found that fraud is more likely to occur when purchases are made from the same device**.
 
-![Line Graph showing the Likelihood of Fraud by Number of Purchases made from the Same Device](images/fraud_by_device_frequency.jpeg)
+![Line Graph showing the Likelihood of Fraud by Number of Purchases made from the Same Device](images/fraud_by_device_frequency.jpg)
 
 I also analyzed countries, beginning with the top 12 countries with the most transactions. **IP addresses from the United States are most represented, followed by IP addresses that are not trackable**.
 
-![Bar Chart showing the Top 12 Countries with the Most Transactions](images/fraud_by_device_frequency.jpeg)
+![Bar Chart showing the Top 12 Countries with the Most Transactions](images/fraud_by_device_frequency.jpg)
 
 I delved deepr into the analysis of countries by looking at the likelihood of fraud by country for the top 12 countries with the most transactions. **Of the top 12, Canada has the most fraudulent transactions & the United States has high fraud levels**.
 
-![Bar Chart showing the Likelihood of Fraud by Country](images/fraud_by_country.jpeg)
+![Bar Chart showing the Likelihood of Fraud by Country](images/fraud_by_country.jpg)
 
 I dug even further into the country analysis by using a map to explore the number of transactions, amount of fraud, and breakdown of quick purchases by country. **The United States has the most transactions, overall and fraudulent, with a high proportion of quick purchases**.
 
-![Map showing the Number of Transactions, Amount of Fraud, and Breakdown of Quick Purchases by Country](images/countries_transactions_quick_purchases.jpeg)
+![Map showing the Number of Transactions, Amount of Fraud, and Breakdown of Quick Purchases by Country](images/countries_transactions_quick_purchases.jpg)
 
 Next, I explored several models to analyze the e-commerce transactions and identify high predictors of fraud. The performance and interpretability of these models is summarized in the table below.
 
-![Table Summarizing Model Performance and Interpretability](images/model_summary_table.jpeg)
+![Table Summarizing Model Performance and Interpretability](images/model_summary_table.jpg)
 
-More details, such as the confusion matrix, Area Under the Curve - Receiver Operating Characteristic (AUC-ROC) Curve, and Area Under the Curve - Precision-Recall (AUC-PR) Curve can be found in the [Jupyter Notebook](notebook.ipynb) and appendix section of the [Presentation Slide Deck](presentation.pdf).  
+More details, such as the confusion matrix, Area Under the Curve - Receiver Operating Characteristic (AUC-ROC) Curve, and Area Under the Curve - Precision-Recall (AUC-PR) Curve can be found in the [Jupyter Notebook](index.ipynb) and appendix section of the [Presentation Slide Deck](presentation.pdf).  
 
 
 ## Results
