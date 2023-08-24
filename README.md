@@ -9,7 +9,7 @@
 
 
 ## For More Information
-To explore our findings further, please review the full analysis in the [Jupyter Notebook](index.ipynb) or view my [Presentation Slide Deck](presentation.pdf). 
+To explore my findings further, please review the full analysis in the [Jupyter Notebook](index.ipynb) or view my [Presentation Slide Deck](presentation.pdf). 
 
 
 ## Business Problem
@@ -50,11 +50,11 @@ The IP table dataset includes 138,846 entries and 3 variables, including IP addr
 
   4. Type of Device - Although the dataset includes device ID, I do not know what type of device was used. There may be patterns in the type of devices that scammers use.
 
-  5. Data on Whether Transaction Passed Addition Checks - Transactions that do not pass checks, such as CVV (Card Verification Value)and AVS (Address Verification System), are more likely to be fraudulent. Yet, I have no information on whether checks were passed.
+  5. Data on Whether Transaction Passed Addition Checks - Transactions that do not pass checks, such as CVV (Card Verification Value) and AVS (Address Verification System), are more likely to be fraudulent. Yet, I have no information on whether checks were passed.
   
-  6. IP Addresses in Standard Format - Although available, the IP addresses proviced are not a standard form that would make validation on real datasets easier.
+  6. IP Addresses in Standard Format - Although available, the IP addresses provided are not a standard form that would make validation on real datasets easier.
 
-- **Class Imbalance**: The dataset has a disproportionate low ratio of observations in the fraudulent classification category, at only 9.36%. Class imbalance can be addressed using resampling techniques (Oversample Minority Class or Undersample Majority Class) or generating synthetic samples. In this project, I address the imbalance using SMOTE (Synthetic Minority Oversampling Technique).
+- **Class Imbalance**: The dataset has a disproportionately low ratio of observations in the fraudulent classification category, at only 9.36%. Class imbalance can be addressed using resampling techniques (Oversample Minority Class or Undersample Majority Class) or generating synthetic samples. In this project, I address the imbalance using SMOTE (Synthetic Minority Oversampling Technique).
 
 ## Methods
 
@@ -62,7 +62,7 @@ This project uses feature engineering, Exploratory Data Anaylsis (EDA), and mode
 
 Prior to visualizing and modeling the data, I performed feature engineering. For example, I mapped IP addresses to countries using the IP table and created variables for 'relevant countries' that were heavily represented in the dataset. For transactions with hidden IP addresses, country was mapped to 'Unknown'. From countries, I also created a variable for the number of countries associated with the device's transactions.
 
-Using the signup and purchase times, I created variables for purchase month, weekday, period of day. I used the signup and purchase times to create a ‘seconds since signup’ variable, that I further engineered into a Quick Purchase variable indicating whether or not a purchase was made within 137 seconds of signup.
+Using the signup and purchase times, I created variables for purchase month, weekday, and period of day. I used the signup and purchase times to create a ‘seconds since signup’ variable, that I further engineered into a Quick Purchase variable indicating whether or not a purchase was made within 137 seconds of signup.
 
 Additionally, I used Device ID to create a 'device frequency' value indicating the number of times a device was used in the dataset.
 
@@ -84,7 +84,7 @@ I also analyzed countries, beginning with the top 12 countries with the most tra
 
 ![Bar Chart showing the Top 12 Countries with the Most Transactions](images/countries_with_most_transactions.jpg)
 
-I delved deepr into the analysis of countries by looking at the likelihood of fraud by country for the top 12 countries with the most transactions. **Of the top 12, Canada has the most fraudulent transactions & the United States has high fraud levels**.
+I delved deeper into the analysis of countries by looking at the likelihood of fraud by country for the top 12 countries with the most transactions. **Of the top 12, Canada has the most fraudulent transactions, and the United States has high fraud levels**.
 
 ![Bar Chart showing the Likelihood of Fraud by Country](images/fraud_by_country.jpg)
 
@@ -103,7 +103,7 @@ More details, such as the confusion matrix, Area Under the Curve - Receiver Oper
 
 ## Results
 
-The Logistic Regression models (base model [Model 3] and with lasso regularization [Model 4]) both performed well and are easier to interpret. Both models had good accuracy, AUC and AUC-PR scores. These scores for the logistic regression model were 92.0%, 81.8% and 71% respectively. For the logistic regression with lasso regularization, these scores were 91.6%, 82.2% and 70% respectively. 
+The Logistic Regression models (base model [Model 3] and with lasso regularization [Model 4]) both performed well and are easy to interpret. Both models had good accuracy, AUC and AUC-PR scores. These scores for the logistic regression model were 92.0%, 81.8% and 71% respectively. For the logistic regression with lasso regularization, these scores were 91.6%, 82.2% and 70% respectively. 
 
 I got straightforward quantifiable insights from the odds ratios of the models. The logistic regression model suggests that purchases made within the first 137 seconds of signup are 110 times more likely to be fraudulent. It also shows that a device used one additional time is 8 times more likely to make a fraudulent purchase. The logistic regression model with lasso regularization suggests that purchases made within the first 137 seconds of signup are 39 times more likely to be fraudulent. It also shows that a device used one additional time is 29 times more likely to make a fraudulent purchase.
 
