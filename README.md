@@ -1,4 +1,4 @@
-![Card Fraud Detection for E-Commerce Transactions](images/GH_Header.jpeg)
+![Card Fraud Detection for E-Commerce Transactions](images/GH_Header.jpg)
 
 # Quick and Same-Device E-Commerce Card Transactions are More Likely to be Fraudulent 
 
@@ -112,7 +112,7 @@ Given these results, I would recommend that financial institutions adopt a fraud
 Given the findings from the exploratory data analysis, I also recommend that financial institutions staff their customer service and fraud prevention departments higher in the month of January, when fraud risk is higher following the holiday shopping period.
 
 
-### Next Steps
+### Future Steps
 
 Future areas for analysis that could build on the findings from this project include:
 
@@ -121,3 +121,34 @@ Future areas for analysis that could build on the findings from this project inc
 - Finding publicly available real datasets with mostly transparent data 
 
 - Detecting other forms of identity theft, such as government benefits and documents, the second most common form
+
+
+## Repository Contents
+
+    .
+    ├── data                          # Directory containing original data files and cleaned master data CSV
+    │   │
+    │   ├── Fraud_Data.csv 
+    │   ├── Fraud_Data_after_Feature_Eng.csv 
+    │   ├── IpAddress_to_Country.csv
+    │   └── fraud_detection.zip
+    │    
+    ├── images                        # Directory containing files used in final Jupyter Notebook and
+    │   │                             # README.md files
+    │   ├── GH_Header.jpg
+    │   ├── countries_transactions_quick_purchases.jpg
+    │   ├── countries_with_most_transactions.jpg
+    │   ├── credit_card_declined.jpeg
+    │   ├── credit_card_scammer1.jpeg
+    │   ├── credit_card_scammer2.jpeg
+    │   ├── fraud_by_country.jpg
+    │   ├── fraud_by_device_frequency.jpg
+    │   ├── fraud_by_purchase_month.jpg
+    │   ├── fraud_by_quick_purchase.jpg
+    │   ├── global_losses_2014_2021.png
+    │   └── model_summary_table.jpg  
+    │    
+    ├── .gitignore                    # Text document listing directories and files to ignore
+    ├── README.md                     # This document
+    ├── index.ipynb                   # Final narrative notebook of data analysis 
+    └── presentation.pdf              # PDF version of presentation slides
