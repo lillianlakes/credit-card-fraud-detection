@@ -98,7 +98,7 @@ Next, I explored several models to analyze the e-commerce transactions and ident
 
 ![Table Summarizing Model Performance and Interpretability](images/model_summary_table.jpg)
 
-More details, such as the confusion matrix, Area Under the Curve - Receiver Operating Characteristic (AUC-ROC) Curve, and Area Under the Curve - Precision-Recall (AUC-PR) Curve can be found in the [Jupyter Notebook](index.ipynb) and appendix section of the [Presentation Slide Deck](presentation.pdf).  
+More details, such as the confusion matrices, Area Under the Curve - Receiver Operating Characteristic (AUC-ROC) Curves, and Area Under the Curve - Precision-Recall (AUC-PR) Curves can be found in the [Jupyter Notebook](index.ipynb) and appendix section of the [Presentation Slide Deck](presentation.pdf).  
 
 
 ## Results
