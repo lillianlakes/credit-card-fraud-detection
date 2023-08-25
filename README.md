@@ -50,7 +50,7 @@ The IP table dataset includes 138,846 entries and 3 variables, including IP addr
 
   4. Type of Device - Although the dataset includes device ID, I do not know what type of device was used. There may be patterns in the type of devices that scammers use.
 
-  5. Data on Whether Transaction Passed Addition Checks - Transactions that do not pass checks, such as CVV (Card Verification Value) and AVS (Address Verification System), are more likely to be fraudulent. Yet, I have no information on whether checks were passed.
+  5. Data on Whether Transaction Passed Additional Checks - Transactions that do not pass checks, such as CVV (Card Verification Value) and AVS (Address Verification System), are more likely to be fraudulent. Yet, I have no information on whether checks were passed.
   
   6. IP Addresses in Standard Format - Although available, the IP addresses provided are not a standard form that would make validation on real datasets easier.
 
