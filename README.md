@@ -58,7 +58,7 @@ The IP table dataset includes 138,846 entries and 3 variables, including IP addr
 
 ## Methods
 
-This project uses feature engineering, Exploratory Data Anaylsis (EDA), and models to support my recommendations. I explored ten different models, and selected two that had the best performance and interpretability. 
+This project uses feature engineering, Exploratory Data Analysis (EDA), and models to support my recommendations. I explored ten different models, and selected two that had the best performance and interpretability. 
 
 Prior to visualizing and modeling the data, I performed feature engineering. For example, I mapped IP addresses to countries using the IP table and created variables for 'relevant countries' that were heavily represented in the dataset. For transactions with hidden IP addresses, country was mapped to 'Unknown'. From countries, I also created a variable for the number of countries associated with the device's transactions.
 
