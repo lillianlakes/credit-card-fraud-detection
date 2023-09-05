@@ -9,7 +9,7 @@
 
 
 ## For More Information
-To explore my findings further, please review the full analysis in the [Jupyter Notebook](index.ipynb) or view my [Presentation Slide Deck](presentation.pdf). 
+To explore my findings further, please review the full analysis in the [Jupyter Notebook](index.ipynb) or view my [Presentation Slide Deck](presentation.pdf) and [Live Presentation Recording](https://www.youtube.com/watch?v=0o_FqgBbkAQ). 
 
 
 ## Business Problem
