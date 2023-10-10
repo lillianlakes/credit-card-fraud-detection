@@ -9,7 +9,7 @@
 
 
 ## For More Information
-To explore my findings further, please review the full analysis in the [Jupyter Notebook](index.ipynb) or view my [Presentation Slide Deck](presentation.pdf) and [Live Presentation Recording](https://www.youtube.com/watch?v=0o_FqgBbkAQ). 
+To explore my findings further, please review the full analysis in the [Jupyter Notebook](index.ipynb) or view my [Presentation Slide Deck](presentation.pdf), [Live Presentation Recording](https://www.youtube.com/watch?v=0o_FqgBbkAQ) or [Flatiron's School's Final Project Showcase Recording with Q & A](https://youtu.be/JDbQ-qKo1D8?si=pkopKhyFU3ooHLdj&t=350). 
 
 
 ## Business Problem
